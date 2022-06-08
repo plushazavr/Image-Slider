@@ -1,0 +1,15 @@
+.manual__button{
+  border: 2px solid #40d3dc;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual__button:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual__button:hover{
+  background-color: #40d3dc;
+}

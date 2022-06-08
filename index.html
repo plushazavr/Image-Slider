@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <title>Image Slider</title>
+</head>
+<body class="root">
+  <div class="slider">
+    <div class="slides">
+      <input class="radio-button" type="radio" name="radio-button" id="radio1">
+      <input class="radio-button" type="radio" name="radio-button" id="radio2">
+      <input class="radio-button" type="radio" name="radio-button" id="radio3">
+      <input class="radio-button" type="radio" name="radio-button" id="radio4">
+
+      <div class="slide first">
+        <img class="slide__image" src="./image/1.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img class="slide__image" src="./image/2.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img class="slide__image" src="./image/3.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img class="slide__image" src="./image/4.jpg" alt="">
+      </div>
+
+      <div class="navigation">
+        <div class="navigation__button navigation__button_first"></div>
+        <div class="navigation__button navigation__button_second"></div>
+        <div class="navigation__button navigation__button_third"></div>
+        <div class="navigation__button navigation__button_fourth"></div>
+      </div>
+    </div>
+    <div class="manual">
+      <label class="manual__button" for="radio1"></label>
+      <label class="manual__button" for="radio2"></label>
+      <label class="manual__button" for="radio3"></label>
+      <label class="manual__button" for="radio4"></label>
+    </div>
+    
+  </div>
+
+  <script type="text/javascript">
+    let counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 5000);
+  </script>
+
+</body>
+</html>
