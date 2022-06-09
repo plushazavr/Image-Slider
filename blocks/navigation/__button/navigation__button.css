@@ -9,15 +9,15 @@
   margin-right: 40px;
 }
 
-#radio1:checked ~ .navigation__button_first{
+#radio1:checked ~ .navigation .navigation__button1{
   background-color: #40d3dc;
 }
-#radio2:checked ~ .navigation__button_second{
+#radio2:checked ~ .navigation .navigation__button2{
   background-color: #40d3dc;
 }
-#radio3:checked ~ .navigation__button_third{
+#radio3:checked ~ .navigation .navigation__button3{
   background-color: #40d3dc;
 }
-#radio4:checked ~ .navigation__button_fourth{
+#radio4:checked ~ .navigation .navigation__button4{
   background-color: #40d3dc;
 }
